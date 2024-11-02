@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(37, 41, 41);
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(37, 41, 41);
+  height: 100%;
+}
+
+.main_container h1,
+h2 {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container_datos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: darkgray;
+}
+
+.p_title {
+  font-weight: bold;
+}
+
+.container_datos h1,
+h2,
+p {
+  color: white;
+  text-align: center;
+}
+
+.bton_buscar,
+.pesos_clp,
+.tipo_de_moneda {
+  text-align: center;
+  width: 80%;
+  height: 30px;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bton_buscar {
+  margin-top: 10px;
+  color: white;
+  height: 36px;
+  background-color: rgb(81, 215, 233);
+  border-radius: 5%;
+  border: solid 1px blue;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bton_buscar:hover {
+  background-color: #3bb3e2; /* Color al pasar el mouse */
+  transform: scale(1.01); /* Aumentar tamaño ligeramente */
+  border: solid 2px rgb(0, 140, 255);
+}
+
+.bton_buscar:active {
+  background-color: #0056b3; /* Color al hacer clic */
+}
+
+.conversor_moneda {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_foto {
+  width: 30%;
+}
+
+.container_datos {
+  min-width: 40%;
+}
+
+canvas {
+  margin: 10px;
+  background-color: rgb(37, 41, 41);
+  width: 1000px;
+  height: 50px;
+}

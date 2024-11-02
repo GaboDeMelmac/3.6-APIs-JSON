@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Conversor de monedas</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <hr />
+      <h1>Conversor de monedas Nacional</h1>
+      <hr />
+
+      <div class="container_datos">
+        <h2>Pesos CLP</h2>
+        <form id="formulario">
+          <!-- 1. Input de entrada de numero -->
+          <label for="numero"></label>
+          <input
+            class="pesos_clp"
+            type="number"
+            id="pesos_clp"
+            name="pesos_clp"
+            placeholder="Ingrese el monto en CLP"
+            required
+          />
+
+          <!-- 2. Selección dentro de lista desplegable  -->
+          <label for="seleccion">
+            <p class="p_title">Moneda a convertir</p>
+          </label>
+          <select class="tipo_de_moneda" id="tipo_de_moneda" name="seleccion">
+            <!-- <option value="" disabled selected style="display: none">
+              Seleccione una moneda...
+            </option> -->
+            <!-- Placeholder -->
+            <option value="dolar">Dolar</option>
+            <option value="dolar_intercambio">Dólar acuerdo</option>
+            <option value="euro">Euro</option>
+          </select>
+
+          <!-- 3. Boton  de Buscar -->
+          <input class="bton_buscar" type="submit" value="Buscar" />
+        </form>
+
+        <div class="resultado"></div>
+      </div>
+
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
